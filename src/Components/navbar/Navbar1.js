@@ -13,7 +13,11 @@ export default function Navbar1() {
     <nav className="bg-[#000000f5] text-white navbar">
       <Container className="flex flex-nowrap justify-between items-center">
         <div className="flex items-center flex-row">
-          <div></div>
+          <div className="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <a href="#" className="h-8">
             <figure>
               <img
