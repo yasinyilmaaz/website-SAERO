@@ -1,3 +1,16 @@
 .navbar{
     border-bottom: 1px solid rgb(133, 220, 238);
 }
+@media only screen and (min-height: 500px) {
+    .navbar{
+        height: 118px;
+        transition: all 2s;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .navbar{
+        height: 60px;
+        transition: all 2s;
+    }
+}
