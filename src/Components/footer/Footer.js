@@ -1,5 +1,7 @@
 export default function Footer(){
     return(
-        <div>footer</div>
+        <footer className="bg-black-900">
+             
+        </footer>
     )
 }
