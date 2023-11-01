@@ -1,6 +1,20 @@
 .navbar{
     border-bottom: 1px solid rgb(133, 220, 238);
 }
+
+.tabb
+{
+  background-color: #000000f5;
+  height: 84vh;
+  padding: 20px;
+  color: white;
+}
+
+[data-rb-event-key="home"] {
+  background-color: red;
+  text-align: right;
+}
+
 @media only screen and (min-height: 500px) {
     .navbar{
         height: 118px;
