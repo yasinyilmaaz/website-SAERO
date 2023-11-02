@@ -11,7 +11,7 @@ export default function Navbar1() {
 
   return (
     <header>
-    <nav className="bg-[#000000f5] text-white navbar">
+    <nav className="bg-[#000000f5]  navbar">
       <Container className="flex flex-nowrap justify-between items-center">
         <div className="flex items-center flex-row">
           <div className="hamburger">
