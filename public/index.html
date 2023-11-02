@@ -32,7 +32,7 @@
       background-color: #ffffff;
       border-radius: 50%;
       position: absolute;
-      animation: star-fall 10s linear infinite;
+      animation: star-fall 200s linear infinite;
     }
 
 
@@ -55,8 +55,8 @@
     -->
 
     <script>
-      const numberOfStars = 50;
-      const numberOfMeteors = 5;
+      const numberOfStars = 100;
+      const numberOfMeteors = 12;
   
       const createStar = () => {
         const star = document.createElement("div");
@@ -69,8 +69,8 @@
       const createMeteor = () => {
         const meteor = document.createElement("div");
         meteor.className = "meteor";
-        meteor.style.left = `${Math.random() * 100}vw`;
-        meteor.style.top = `${Math.random() * 90}vh`;
+        meteor.style.left = `${Math.random() * 80}vw`;
+        meteor.style.bottom = `${Math.random() * 70}vh`;
         document.body.appendChild(meteor);
       };
   

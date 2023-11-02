@@ -55,15 +55,16 @@ body {
     background-image: url('asteroid-1.png');
     position: absolute;
     z-index: 1;
-    animation: meteor-fall 10s linear infinite;
+    animation: meteor-fall 300s linear infinite;
   }
 @keyframes star-fall {
     0% {
       transform: translateX(-100%);
       left: calc(100vw * random());
+
     }
     100% {
-      transform: translateX(100vh);
+      transform: translateX(200vh);
       left: calc(100vw * random());
     }
   }
@@ -71,11 +72,12 @@ body {
   @keyframes meteor-fall {
     0% {
       transform: translateX(-100%) rotate(45deg);
-      left: -2px;
+      left: calc(10px * random());
+
     }
     0%, 100%{transform: rotate(180deg)}
     100% {
-      transform: translateX(10vh) rotate(45deg);
+      transform: translateX(200vh) rotate(45deg);
       left: calc(100vw * random());
     }}
 
