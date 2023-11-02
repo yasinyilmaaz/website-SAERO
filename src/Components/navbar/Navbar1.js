@@ -10,10 +10,10 @@ export default function Navbar1() {
   };
 
   return (
-    <header>
-    <nav className="bg-[#000000f5]  navbar">
+    <header >
+    <nav className="bg-[#000000f5]  navbar ">
       <Container className="flex flex-nowrap justify-between items-center">
-        <div className="flex items-center flex-row">
+        <div className="flex items-center flex-row  z-10" >
           <div className="hamburger">
             <div></div>
             <div></div>
@@ -29,7 +29,7 @@ export default function Navbar1() {
             </figure>
           </a>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3  z-10">
           <div className=" flex gap-2">
             <input
               ref={inputRef}

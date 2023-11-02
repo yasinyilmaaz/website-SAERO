@@ -1,10 +1,12 @@
+import { useEffect } from 'react';
 import './App.css';
 import HomePage from './Components/HomePage';
 
 
 function App() {
+
   return (
-    <div >
+    <div className='z-10'>
       <HomePage/>
     </div>
     );

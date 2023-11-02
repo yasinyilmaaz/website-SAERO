@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yıldız ve Meteor Animasyonları</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      background-color: black;
+    }
+
+    .star {
+      width: 2px;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      animation: star-fall 10s linear infinite;
+    }
+
+    .meteor {
+      width: 2px;
+      height: 20px;
+      background-color: #ff9900;
+      position: absolute;
+      animation: meteor-fall 5s linear infinite;
+    }
+
+    @keyframes star-fall {
+      0% {
+        transform: translateX(-300%);
+        left: calc(100vw * random());
+      }
+      100% {
+        transform: translateX(100vh);
+        left: calc(100vw * random());
+      }
+    }
+
+    @keyframes meteor-fall {
+      0% {
+        transform: translateX(-300%) rotate(45deg);
+        left: calc(100vw * random());
+      }
+      100% {
+        transform: translateX(100vh) rotate(45deg);
+        left: calc(100vw * random());
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const numberOfStars = 50;
+    const numberOfMeteors = 5;
+
+    const createStar = () => {
+      const star = document.createElement("div");
+      star.className = "star";
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.top = `${Math.random() * 100}vh`;
+      document.body.appendChild(star);
+    };
+
+    const createMeteor = () => {
+      const meteor = document.createElement("div");
+      meteor.className = "meteor";
+      meteor.style.left = `${Math.random() * 100}vw`;
+      meteor.style.top = `${Math.random() * 100}vh`;
+      document.body.appendChild(meteor);
+    };
+
+    const animateStars = () => {
+      for (let i = 0; i < numberOfStars; i++) {
+        createStar();
+      }
+    };
+
+    const animateMeteors = () => {
+      for (let i = 0; i < numberOfMeteors; i++) {
+        createMeteor();
+      }
+    };
+
+    animateStars();
+    animateMeteors();
+  </script>
+</body>
+</html>
