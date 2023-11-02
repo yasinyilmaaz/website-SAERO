@@ -11,6 +11,10 @@
   color: white;
 }
 
+[data-rb-event-key="home"] {
+  background-color: red;
+  text-align: right;
+}
 
 
 @media only screen and (min-height: 500px) {

@@ -5,49 +5,21 @@ import Tabs from 'react-bootstrap/Tabs';
 
 export default function tabbs() {
 
-  var color = "white"
-
-  
-  function handleSelect(key) {
-    console.log(color)
-    switch (key) {
-      case "home":
-        color = "white"
-        break;
-      case "kurumsal":
-        color = "#85dcee"
-        break;
-      case "projeler":
-        color = "#e9bb7e"
-        break;
-      case "egitim":
-        color = "#a595ff"
-        break;
-      case "ulusal":
-        color = "#7ae4a0"
-        break;
-      default:
-        color = "white"
-        break;
-    }
-  }
-  
   return (
     <div>
     <Tabs 
       defaultActiveKey={"home"}
       id="justify-tab-example"
       className="bg-[#000000f5] deger text-white"
-      style={{"--color":color}}
       justify
-      onSelect={handleSelect}
     >
       <Tab eventKey="home" title="00 Ana Sayfa">
           <div className="tabb">
                 Tab content for Ana Sayfa
           </div>
       </Tab>
-      <Tab  eventKey="kurumsal"  title="01 Kurumsal">
+      <Tab  eventKey="kurumsal" title="01 Kurumsal">
+
                   <div className="tabb">
                 Tab content for kurumsal
                   </div>
