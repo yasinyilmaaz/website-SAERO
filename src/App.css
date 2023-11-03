@@ -32,61 +32,122 @@
     }
 }
 
-
-.deger li button {
-    color: gray;
-    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 0% !important;
-    width: 100% !important;
-    border-bottom: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    background-color: transparent !important;
-    padding: 12px 0px;
+@media only screen and (max-width: 500px) {
+    .hamburgerlink{
+        width: 100% !important;
+        transition: all 2s;
+    }
+    .sociallinks{
+        width: 100% !important;
+        transition: all 2s;
+    }
+    .hamburgermenuinfo{
+        width: 100% !important;
+        transition: all 2s;
+    }
 }
 
-.deger li button:hover {
+
+
+.hambugermenu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: rgb(197, 197, 197);
+    background-color: rgba(14, 14, 14, 0.856);
+    z-index: 1000;
+    opacity: 1;
+    transition: none;
+    animation: antdDrawerFadeIn 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+    pointer-events: auto;
+}
+
+.hamburgers{
+    position: static;
+    height: 50%;
+    width: 20%;
+    border-right: 1px white solid;
+
+}
+
+
+.hamburgerlink{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    overflow: scroll;
+    margin-right: -17px;
+    margin-bottom: -17px;
+    border-right: 1px white solid;
+}
+
+.hamburgerlink::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+
+.hamburgerlink a{
+    color: #c5c5c5;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    display: block;
+}
+
+.hamburgerlink a:hover{
     color: white;
-    border: 0;
 }
 
-.deger li .active {
-    color: var(--color) !important;
-    border-color: white !important;
-    background-color: transparent !important;
-}
-
-.deger li #justify-tab-example-tab-kurumsal:hover, #justify-tab-example-tab-kurumsal[aria-selected=true] {
+.Corporate:hover{
     color: #85dcee !important;
-    border-color: #85dcee !important;
-    transition: all 1s !important;
 }
 
-.deger li #justify-tab-example-tab-projeler:hover,#justify-tab-example-tab-projeler[aria-selected=true] {
+.Projects:hover{
     color: #e9bb7e !important;
-    border-color: #e9bb7e !important;
-    transition: all 1s !important;
 }
 
-.deger li #justify-tab-example-tab-projeler:hover, #justify-tab-example-tab-projeler[aria-selected=true] {
-    color: #e9bb7e !important;
-    border-color: #e9bb7e !important;
-    transition: all 1s !important;
-}
-
-.deger li #justify-tab-example-tab-egitim:hover, #justify-tab-example-tab-egitim[aria-selected=true] {
+.Education:hover{
     color: #a595ff !important;
-    border-color:  #a595ff !important;
-    transition: all 1s !important;
 }
 
-.deger li #justify-tab-example-tab-ulusal:hover, #justify-tab-example-tab-ulusal[aria-selected=true] {
+.International:hover{
     color: #7ae4a0 !important;
-    border-color:  #7ae4a0 !important;
-    transition: all 1s !important;
 }
 
 
+.sociallinks{
+    position: absolute;
+    top: 50%;
+    padding-top: 3rem;
+    width: 30%;
+    border-right: 1px white solid;
+}
 
+.sociallink svg{
+    color: #7a7a7a;  
+    border: #7a7a7a 0.5px solid;
+    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center; 
+}
 
+.sociallink svg:hover{
+    color: white;
+   
+}
 
+.hamburgermenuinfo{
+    position: absolute;
+    top: 60%;
+    width: 30%;
+    margin-top: 40px;
+    bottom: 0;
+    border-right: 1px white solid;
+    color: #7a7a7a;
+}

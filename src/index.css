@@ -3,12 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    background-color: black;
-  }
 
 .nav-line{
     height: 2px;

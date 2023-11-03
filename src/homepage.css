@@ -1,0 +1,54 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    background-color: black;
+}
+
+.deger li button {
+    color: gray;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 0% !important;
+    width: 100% !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent !important;
+    padding: 12px 0px;
+}
+
+.deger li button:hover {
+    color: white;
+    border: 0;
+}
+
+.deger li .active {
+    color: var(--color) !important;
+    border-color: white !important;
+    background-color: transparent !important;
+}
+
+.deger li #justify-tab-example-tab-kurumsal:hover, #justify-tab-example-tab-kurumsal[aria-selected=true] {
+    color: #85dcee !important;
+    border-color: #85dcee !important;
+    transition: all 1s !important;
+}
+
+.deger li #justify-tab-example-tab-projeler:hover,#justify-tab-example-tab-projeler[aria-selected=true] {
+    color: #e9bb7e !important;
+    border-color: #e9bb7e !important;
+    transition: all 1s !important;
+}
+
+
+.deger li #justify-tab-example-tab-egitim:hover, #justify-tab-example-tab-egitim[aria-selected=true] {
+    color: #a595ff !important;
+    border-color:  #a595ff !important;
+    transition: all 1s !important;
+}
+
+.deger li #justify-tab-example-tab-ulusal:hover, #justify-tab-example-tab-ulusal[aria-selected=true] {
+    color: #7ae4a0 !important;
+    border-color:  #7ae4a0 !important;
+    transition: all 1s !important;
+}

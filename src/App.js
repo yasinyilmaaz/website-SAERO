@@ -6,7 +6,7 @@ import HomePage from './Components/HomePage';
 function App() {
 
   return (
-    <div className='z-10'>
+    <div>
       <HomePage/>
     </div>
     );
