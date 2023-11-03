@@ -1,9 +1,13 @@
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Nav, NavLink } from "react-bootstrap";
 import React, { useRef,useState } from "react";
+import { Sling as Hamburger } from 'hamburger-react'
+import classNames from "classnames"
+
 
 export default function Navbar1() {
   const inputRef = useRef();
   const [language, setLanguage] = useState("TR")
+  const [isOpen, setOpen] = useState(false)
 
   const handleInputClick = () => {
     inputRef.current.focus();
@@ -14,11 +18,7 @@ export default function Navbar1() {
     <nav className="bg-[#000000f5]  navbar ">
       <Container className="flex flex-nowrap justify-between items-center">
         <div className="flex items-center flex-row  z-10" >
-          <div className="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        <Hamburger toggled={isOpen} toggle={setOpen} />
           <a href="#" className="h-8">
             <figure>
               <img
