@@ -3,12 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .nav-line{
     height: 2px;
     width: 100%;
     background-color: gray;
     margin-bottom: 5px;
 }
+
+
 
 .nav-link:hover .nav-line{
     background-color: var(--color);
@@ -35,3 +38,42 @@
     background-color: antiquewhite;
     
 }
+
+.star{
+    background-image: url('star.png');
+}
+
+.meteor {
+    width: 100px;
+    height: 100px;
+    background-image: url('asteroid-1.png');
+    position: absolute;
+    
+    
+    animation: meteor-fall 300s linear infinite;
+  }
+@keyframes star-fall {
+    0% {
+      transform: translateX(-100%);
+      left: calc(100vw * random());
+
+    }
+    100% {
+      transform: translateX(200vh);
+      left: calc(100vw * random());
+    }
+  }
+
+  @keyframes meteor-fall {
+    0% {
+      transform: translateX(-100%) rotate(45deg);
+      left: calc(10px * random());
+
+    }
+    0%, 100%{transform: rotate(180deg)}
+    100% {
+      transform: translateX(200vh) rotate(45deg);
+      left: calc(100vw * random());
+    }}
+
+

@@ -25,6 +25,20 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .star {
+      width: 2px;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      animation: star-fall 200s linear infinite;
+    }
+
+
+    
+    
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +53,42 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      const numberOfStars = 100;
+      const numberOfMeteors = 12;
+  
+      const createStar = () => {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.left = `${Math.random() * 100}vw`;
+        star.style.top = `${Math.random() * 90}vh`;
+        document.body.appendChild(star);
+      };
+  
+      const createMeteor = () => {
+        const meteor = document.createElement("div");
+        meteor.className = "meteor";
+        meteor.style.left = `${Math.random() * 80}vw`;
+        meteor.style.top = `${Math.random() * 50}vh`;
+        meteor.style.marginTop= "400px"
+        document.body.appendChild(meteor);
+      };
+  
+      const animateStars = () => {
+        for (let i = 0; i < numberOfStars; i++) {
+          createStar();
+        }
+      };
+  
+      const animateMeteors = () => {
+        for (let i = 0; i < numberOfMeteors; i++) {
+          createMeteor();
+        }
+      };
+  
+      animateStars();
+      animateMeteors();
+    </script>
   </body>
 </html>

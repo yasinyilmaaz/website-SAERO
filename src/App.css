@@ -1,5 +1,43 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@-ms-viewport {
+  width: device-width;
+}
+body {
+  margin: 0;
+  color: white;
+  /* font-size: 15px; */
+  font-family: "Made Outer Sans";
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  background-color: black;
+  font-feature-settings: 'tnum';
+}
+
+
 .navbar{
-    border-bottom: 1px solid rgb(133, 220, 238);
+    /* border-bottom: 1px solid rgb(133, 220, 238); */
+    color: white;
 }
 
 .tabb
@@ -8,7 +46,14 @@
   height: 84vh;
   padding: 20px;
   color: white;
+  font-weight: 500;
 }
+
+[data-rb-event-key="home"] {
+  background-color: red;
+  text-align: right;
+}
+
 
 @media only screen and (min-height: 500px) {
     .navbar{
@@ -22,4 +67,209 @@
         height: 60px;
         transition: all 2s;
     }
+}
+
+@media only screen and (max-width: 770px) {
+    .foother{
+        height: 1250px !important;
+        transition: all 2s;
+    }
+    .footer-navbar div{
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hamburgerlink{
+        width: 100% !important;
+        transition: all 2s;
+    }
+    .sociallinks{
+        width: 100% !important;
+        transition: all 2s;
+    }
+    .hamburgermenuinfo{
+        width: 100% !important;
+        transition: all 2s;
+    }
+}
+
+.foother{
+    height: 600px;
+}
+
+.footer-navbar div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    gap: 8px;
+}
+    
+  .footer-navbar h5{
+    color: white;
+  }
+  
+  .footer-navbar a{
+    color: #a1a1a1;
+    text-decoration: none;
+  }
+  
+  .footer-navbar a:hover{
+    color: #1890ff;
+    text-decoration: none;
+  }
+  
+
+
+.hambugermenu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: rgb(197, 197, 197);
+    background-color: rgba(14, 14, 14, 0.856);
+    z-index: 1000;
+    opacity: 1;
+    transition: none;
+    animation: antdDrawerFadeIn 0.5s cubic-bezier(0.7, 0.3, 0.1, 1);
+    pointer-events: auto;
+}
+
+@keyframes antdDrawerFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.hamburgers{
+    position: static;
+    height: 50%;
+    width: 20%;
+    border-right: 1px white solid;
+
+}
+
+
+.hamburgerlink{
+    width: 350px;
+    height: 50%;
+    position: absolute;
+    overflow: scroll;
+    margin-right: -17px;
+    margin-bottom: -17px;
+    border-right: 1px white solid;
+}
+
+.hamburgerlink::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+
+.hamburgerlink a{
+    color: #c5c5c5;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    display: block;
+}
+
+.hamburgerlink a:hover{
+    color: white;
+}
+
+.Corporate:hover{
+    color: #85dcee !important;
+}
+
+.Projects:hover{
+    color: #e9bb7e !important;
+}
+
+.Education:hover{
+    color: #a595ff !important;
+}
+
+.International:hover{
+    color: #7ae4a0 !important;
+}
+
+.sociallinks{
+    position: absolute;
+    top: 50%;
+    padding-top: 3rem;
+    width: 350px;
+    border-right: 1px white solid;
+}
+
+.sociallink svg{
+    color: #7a7a7a;  
+    border: #7a7a7a 0.5px solid;
+    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center; 
+}
+
+.sociallink svg:hover{
+    color: white;
+   
+}
+
+.hamburgermenuinfo{
+    position: absolute;
+    top: 60%;
+    width: 350px;
+    margin-top: 40px;
+    bottom: 0;
+    border-right: 1px white solid;
+    color: #7a7a7a;
+}
+
+
+.hamburgertext{
+    color: white;
+    position: absolute;
+    width: 600px;
+    left: 40%;
+    padding-top: 10px;
+}
+
+.banner-home{
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+
+}
+
+.banner-content{
+    color: white;
+    z-index: 1000;
+    height: 500px;
+    display: block;
+
+}
+
+.banner-content p{
+    color: white;
+    z-index: 10;
+    width: 500px;
+
+}
+
+.banner-content h1{
+    color: white;
+    width: 37.5%;
+    font-size: 50px;
+    padding-top: 50px;
+    z-index: 1000;
+    /* position: absolute; */
 }
