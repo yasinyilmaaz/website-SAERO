@@ -38,6 +38,17 @@ body{
     }
 }
 
+@media only screen and (max-width: 770px) {
+    .foother{
+        height: 1250px !important;
+        transition: all 2s;
+    }
+    .footer-navbar div{
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .hamburgerlink{
         width: 100% !important;
@@ -53,6 +64,32 @@ body{
     }
 }
 
+.foother{
+    height: 600px;
+}
+
+.footer-navbar div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    gap: 8px;
+}
+    
+  .footer-navbar h5{
+    color: white;
+  }
+  
+  .footer-navbar a{
+    color: #a1a1a1;
+    text-decoration: none;
+  }
+  
+  .footer-navbar a:hover{
+    color: #1890ff;
+    text-decoration: none;
+  }
+  
 
 
 .hambugermenu{
