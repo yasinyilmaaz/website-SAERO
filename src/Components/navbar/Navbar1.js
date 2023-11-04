@@ -114,12 +114,13 @@ export default function Navbar1() {
         <Container>
           <div className="hamburgers">
             <div className="hamburgerlink">
-              <NavLink href="#" className="Homepage" to={url("homepage")}>
+              <NavLink onClick={() => setOpen(false)} href="#" className="Homepage" to={url("homepage")}>
                 Anasayfa
               </NavLink>
               <NavLink
                 to={url("homepage.Corporate")}
                 className="Corporate"
+                onClick={() => setOpen(false)}
                 onMouseEnter={() => setIsHovered("Corporate")}
                 onMouseLeave={() => setIsHovered("")}
               >
@@ -127,6 +128,7 @@ export default function Navbar1() {
               </NavLink>
               <NavLink
                 to={url("homepage.projects")}
+                onClick={() => setOpen(false)}
                 className="Projects"
                 onMouseEnter={() => setIsHovered("Projects")}
                 onMouseLeave={() => setIsHovered("")}
@@ -135,6 +137,7 @@ export default function Navbar1() {
               </NavLink>
               <NavLink
                 to={url("homepage.Education")}
+                onClick={() => setOpen(false)}
                 className="Education"
                 onMouseEnter={() => setIsHovered("Education")}
                 onMouseLeave={() => setIsHovered("")}
@@ -143,6 +146,7 @@ export default function Navbar1() {
               </NavLink>
               <NavLink
                 to={url("homepage.International")}
+                onClick={() => setOpen(false)}
                 className="International "
                 onMouseEnter={() => setIsHovered("International")}
                 onMouseLeave={() => setIsHovered("")}

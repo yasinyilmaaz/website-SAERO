@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 
 export default function Institutional(){
     return(
-        <div className="institutional-home">
+        <div className="banner-home">
             <Container className="">
                 <div className="banner-content">
                     <h1>Saerotech</h1>
