@@ -1,5 +1,9 @@
+import NavbarTrainings from "../navbar/NavbarTrainings";
+
 export default function Trainimgs(){
     return(
-        <div>Trainimgs</div>
+        <div>
+            <NavbarTrainings/>
+        </div>
     )
 }

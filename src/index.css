@@ -49,8 +49,8 @@
     background-image: url('asteroid-1.png');
     position: absolute;
     
+    
     animation: meteor-fall 300s linear infinite;
-   
   }
 @keyframes star-fall {
     0% {
@@ -75,4 +75,3 @@
       transform: translateX(200vh) rotate(45deg);
       left: calc(100vw * random());
     }}
-

@@ -1,3 +1,7 @@
+import { Container } from "react-bootstrap"
+import { NavLink } from "react-router-dom"
+
+
 export default function NavbarTrainings(){
     return(
         <nav className="bg-black text-[#a595ff] font-semibold text-base h-10 ">

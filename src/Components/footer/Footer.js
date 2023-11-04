@@ -1,7 +1,7 @@
 
 export default function Footers(){
     return(
-      <footer className="bg-neutral-900 text-center text-white">
+      <footer className="bg-neutral-900 text-center text-white z-10 absolute w-full">
              <hr/>
              <div className="flex">
                 <h2>Saerotech</h2>

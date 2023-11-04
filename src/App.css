@@ -1,3 +1,9 @@
+body{
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+
 .navbar{
     /* border-bottom: 1px solid rgb(133, 220, 238); */
     color: white;
@@ -156,6 +162,38 @@
     color: white;
     position: absolute;
     width: 600px;
-    left: 480px;
+    left: 40%;
     padding-top: 10px;
+}
+
+.institutional-home{
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+
+}
+
+.banner-content{
+    color: white;
+    z-index: 1000;
+    height: 500px;
+    display: block;
+
+}
+
+.banner-content p{
+    color: white;
+    z-index: 10;
+    width: 500px;
+
+}
+
+.banner-content h1{
+    color: white;
+    width: 37.5%;
+    font-size: 50px;
+    padding-top: 50px;
+    z-index: 1000;
+    /* position: absolute; */
+
 }

@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import '../../homepage.css'
 
 export default function tabbs() {
   return (
@@ -9,7 +9,7 @@ export default function tabbs() {
       <Tabs
         defaultActiveKey={"home"}
         id="justify-tab-example"
-        className="bg-[#000000f5] deger text-white z-10 flex flex-col md:flex-row"
+        className="bg-[#000000f5] deger text-white flex flex-col md:flex-row"
         justify
       >
         <Tab eventKey="home" title="00 Ana Sayfa">

@@ -1,7 +1,10 @@
-import { Button, Container, Nav, NavLink } from "react-bootstrap";
+import { Button, Container, Nav } from "react-bootstrap";
 import React, { useEffect, useRef, useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import classNames from "classnames";
+import { NavLink } from "react-router-dom";
+import { url } from "../../routers/utils";
+
 
 export default function Navbar1() {
   const inputRef = useRef();
@@ -111,41 +114,41 @@ export default function Navbar1() {
         <Container>
           <div className="hamburgers">
             <div className="hamburgerlink">
-              <a href="#" className="Homepage">
+              <NavLink href="#" className="Homepage" to={url("homepage")}>
                 Anasayfa
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={url("homepage.Corporate")}
                 className="Corporate"
                 onMouseEnter={() => setIsHovered("Corporate")}
                 onMouseLeave={() => setIsHovered("")}
               >
                 Kurumsal
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={url("homepage.projects")}
                 className="Projects"
                 onMouseEnter={() => setIsHovered("Projects")}
                 onMouseLeave={() => setIsHovered("")}
               >
                 Projeler
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={url("homepage.Education")}
                 className="Education"
                 onMouseEnter={() => setIsHovered("Education")}
                 onMouseLeave={() => setIsHovered("")}
               >
                 Eğitim ve Sosyal Farkındalık
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={url("homepage.International")}
                 className="International "
                 onMouseEnter={() => setIsHovered("International")}
                 onMouseLeave={() => setIsHovered("")}
               >
                 UluslarArası Faliyetler
-              </a>
+              </NavLink>
               <hr />
               <a href="#" className="duyurular ">
                 Duyurular

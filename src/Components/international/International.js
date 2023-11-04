@@ -1,5 +1,9 @@
+import NavbarInstiutional from "../navbar/NavbarInstiutional";
+
 export default function International(){
     return(
-        <div>International</div>
+        <div>
+            <NavbarInstiutional/>
+        </div>
     )
 }

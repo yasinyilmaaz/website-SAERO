@@ -1,5 +1,6 @@
 body{
-    overflow: hidden;
+    
+    overflow-x: hidden;
     margin: 0;
     position: relative;
     background-color: black;

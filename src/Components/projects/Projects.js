@@ -1,5 +1,9 @@
+import NavbarProjects from "../navbar/NavbarProjects";
+
 export default function Projects(){
     return(
-        <div>Projects</div>
+        <div>
+            <NavbarProjects/>
+        </div>
     )
 }
