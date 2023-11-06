@@ -274,3 +274,35 @@ body {
     /* position: absolute; */
 
 }
+
+.chat{
+    border: #7a7a7a solid 1px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat svg {
+    color: #7a7a7a;
+
+}
+
+.chat:hover{
+    cursor: pointer;
+    
+}
+
+.sociallink-home{
+    position: fixed;
+    bottom: 0px;
+    right: 80px;
+    border: none;
+}
+
+.sociallink-home svg{
+    margin-right: 10px;
+}
