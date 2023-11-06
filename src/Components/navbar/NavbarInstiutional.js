@@ -12,9 +12,9 @@ export default function NavbarInstiutional(){
                 <div className="flex gap-3">
                     <NavLink className={"no-underline text-[#85dcee]"} to={url("homepage.Corporate")} onClick={() => setTitle("Kurumsal")}>Kurumsal</NavLink>
                     <NavLink className={"no-underline text-[#85dcee]"} to={url("homepage.Corporate.Minister")} onClick={() => setTitle("Başkan")}>Başkan</NavLink>
-                    <NavLink className={"no-underline text-[#85dcee]"} onClick={() => setTitle("Yönetim Kurulu")}>Yönetim Kurulu</NavLink>
-                    <NavLink className={"no-underline text-[#85dcee]"} onClick={() => setTitle("Kurumsal Belgeler")}>Kurumsal Belgeler</NavLink>
-                    <NavLink className={"no-underline text-[#85dcee]"} onClick={() => setTitle("Orginizasyon Şeması")}>Orginizasyon Şeması</NavLink>
+                    <NavLink className={"no-underline text-[#85dcee]"} to={url("homepage.Corporate.BoardOfDirectors")} onClick={() => setTitle("Yönetim Kurulu")}>Yönetim Kurulu</NavLink>
+                    <NavLink className={"no-underline text-[#85dcee]"} to={url("homepage.Corporate.CorporateDocuments")} onClick={() => setTitle("Kurumsal Belgeler")}>Kurumsal Belgeler</NavLink>
+                    <NavLink className={"no-underline text-[#85dcee]"} to={url("homepage.Corporate.OrganizationChart")} onClick={() => setTitle("Orginizasyon Şeması")}>Orginizasyon Şeması</NavLink>
                 </div>
             </Container>
         </nav>

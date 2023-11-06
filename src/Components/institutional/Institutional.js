@@ -23,8 +23,6 @@ export default function Institutional(){
                         <div style={{"maxWidth":"75%"}}>Yeni Uzay Çağının gereklerine uygun şekilde, ülkemizin ve tüm insanlığın menfaatine olacak çalışmaları gerçekleştiren  öncü ve lider kurum olmak.</div>
                     </div>
                 </div>
-                <hr className="h-1 border-t-2 border-t-white"/>
-
                 </div>
             </Container>
         </div>

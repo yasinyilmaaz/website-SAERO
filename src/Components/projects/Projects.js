@@ -5,7 +5,7 @@ export default function Projects() {
     <div className="banner-home">
       <Container className="">
         <div className="banner-content">
-          <h1>Uzay Teknolojileri</h1>
+          <h1>Yürütülen Projeler</h1>
           <p>
             Uydu, fırlatma araç ve sistemleri, hava araçları, simülatörler, uzay
             platformları dâhil uzay ve havacılıkla ilgili her türlü ürün,
