@@ -1,12 +1,20 @@
+import { useState } from "react";
 import Tabs from "./tabss/tabs";
 import { useTranslation } from "react-i18next";
-
+import classNames from "classnames";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
+  const [openChat, setOpenChat] = useState(false)
+
+  const handleChat = ()=>{
+        setOpenChat(!openChat)
+  }
+
   return (
     <div>
       <Tabs t={t}/>
+      {/* Sosyal medya linkleri */}
       <div className="sociallink-home">
         <div className="flex gap-1  md:gap-3  flex-row">
           <div className="flex">
@@ -80,7 +88,7 @@ export default function Home() {
         </div>
         <hr />
       </div>
-      <div className="chat fixed text-white bottom-8 right-8">
+      <div className="chat fixed text-white bottom-8 right-8" onClick={handleChat}>
         <span role="img" class="anticon" style={{ fontSize: "25px" }}>
           <svg
             width="0.7em"
@@ -101,6 +109,22 @@ export default function Home() {
           </svg>
         </span>
       </div>
+      {/* Açılan kutu */}
+      <form className={classNames({
+        "chatbox":true,
+        "hidden ":openChat==false
+      })}> 
+        <div className="w-full text-right font-bold text-lg hover:cursor-pointer" onClick={() => setOpenChat(false)}>X</div>
+        <h4>AD SOYAD</h4>
+        <input type="text" className="chatinput"/>
+        <h4>EMAIL</h4>
+        <input type="email" className="chatinput"/>
+        <h4>MESAJINIZ</h4>
+        <textarea className="chatinput"/>
+
+        <button className="chatbutton border-gray-600 border-1 px-3 py-2 ">Gönder</button>
+
+      </form>
     </div>
   );
 }

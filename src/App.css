@@ -7,11 +7,13 @@ input::-ms-clear,
 input::-ms-reveal {
   display: none;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -20,9 +22,11 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 @-ms-viewport {
   width: device-width;
 }
+
 body {
   margin: 0;
   color: white;
@@ -40,21 +44,7 @@ body {
     color: white;
 }
 
-.tabb
-{
-  background-color: #000000f5;
-  height: 84vh;
-  padding: 20px;
-  color: white;
-  font-weight: 500;
-}
-
-[data-rb-event-key="home"] {
-  background-color: red;
-  text-align: right;
-}
-
-
+/* Sayfa 500px üstüne çıkınca çalışacak kod */
 @media only screen and (min-height: 500px) {
     .navbar{
         height: 118px;
@@ -62,6 +52,7 @@ body {
     }
 }
 
+/* Sayfa 500px altına inince çalışacak kod */
 @media only screen and (max-height: 500px) {
     .navbar{
         height: 60px;
@@ -69,6 +60,7 @@ body {
     }
 }
 
+/* 770px küçük genişlikte */
 @media only screen and (max-width: 770px) {
     .foother{
         height: 1250px !important;
@@ -80,6 +72,7 @@ body {
     }
 }
 
+/* 500px küçük genişlikte */
 @media only screen and (max-width: 500px) {
     .hamburgerlink{
         width: 100% !important;
@@ -94,6 +87,8 @@ body {
         transition: all 2s;
     }
 }
+
+/* Foother tasarımı */
 
 .foother{
     height: 600px;
@@ -120,9 +115,27 @@ body {
     color: #1890ff;
     text-decoration: none;
   }
+
+/* ************************** */
   
+.tabb
+{
+  background-color: #000000f5;
+  height: 84vh;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+[data-rb-event-key="home"] {
+  background-color: red;
+  text-align: right;
+}
 
 
+/* Yandn açılan menünün kodları */
+
+/* En dış katman */
 .hambugermenu{
     position: fixed;
     width: 100%;
@@ -145,12 +158,12 @@ body {
     }
   }
 
+
 .hamburgers{
     position: static;
     height: 50%;
     width: 20%;
     border-right: 1px white solid;
-
 }
 
 
@@ -164,12 +177,13 @@ body {
     border-right: 1px white solid;
 }
 
+/* scrool bar tasarımı (gizledim) */
 .hamburgerlink::-webkit-scrollbar{
     width: 0px;
     height: 0px;
 }
 
-
+/* Linklerin genel tasarımı */
 .hamburgerlink a{
     color: #c5c5c5;
     text-decoration: none;
@@ -178,27 +192,32 @@ body {
     line-height: 50px;
     display: block;
 }
-
+/* Linklerin üstüne gelince */
 .hamburgerlink a:hover{
     color: white;
 }
 
+/* Kurumsal üstüne gelince */
 .Corporate:hover{
     color: #85dcee !important;
 }
 
+/* Projeler linkinin üstüne gelince */
 .Projects:hover{
     color: #e9bb7e !important;
 }
 
+/* eğitimler linkinin üstüne gelince */
 .Education:hover{
     color: #a595ff !important;
 }
 
+/* uulusal ve uluslararası linkinin üstüne gelince */
 .International:hover{
     color: #7ae4a0 !important;
 }
 
+/* Sosyal medya linkleri */
 .sociallinks{
     position: absolute;
     top: 50%;
@@ -224,6 +243,7 @@ body {
    
 }
 
+/* Telif Hakkı bölümü */
 .hamburgermenuinfo{
     position: absolute;
     top: 60%;
@@ -234,7 +254,7 @@ body {
     color: #7a7a7a;
 }
 
-
+/*  linklerin üstüne geldiğinde sağ tarafta çıkan yazılar */
 .hamburgertext{
     color: white;
     position: absolute;
@@ -242,7 +262,9 @@ body {
     left: 40%;
     padding-top: 10px;
 }
+/* *************** */
 
+/* sayfa içeriği tasarımı */
 .banner-home{
     width: 100%;
     background-color: black;
@@ -275,6 +297,7 @@ body {
 
 }
 
+/* Anasayfadaki sağ alt kısımdaki linkler */
 .chat{
     border: #7a7a7a solid 1px;
     border-radius: 50%;
@@ -306,3 +329,5 @@ body {
 .sociallink-home svg{
     margin-right: 10px;
 }
+
+/* ********************** */

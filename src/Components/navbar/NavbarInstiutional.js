@@ -17,7 +17,7 @@ export default function NavbarInstiutional() {
           <NavLink
             className={"no-underline text-[#85dcee]"}
             to={url("homepage.Corporate")}
-            onClick={() => setTitle("Kurumsal")}
+            onClick={() => setTitle(t("Corporate"))}
           >
             {t("Corporate")}
           </NavLink>

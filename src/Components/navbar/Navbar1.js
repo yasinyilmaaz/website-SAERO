@@ -110,8 +110,8 @@ export default function Navbar1() {
       </nav>
       <nav
         className={classNames({
-          hambugermenu: true,
-          hidden: isOpen == false,
+          "hambugermenu": true,
+          "hidden": isOpen == false,
         })}
       >
         <Container>

@@ -24,14 +24,14 @@ export default function NavbarInternational() {
           <NavLink
             className={"no-underline text-[#7ae4a0]"}
             onClick={() => setTitle(t("NationalCooperation"))}
-            to={url("homepage.International.InternationalCooperation")}
+            to={url("homepage.International.NationalCooperation")}
           >
             {t("NationalCooperation")}
           </NavLink>
           <NavLink
             className={"no-underline text-[#7ae4a0]"}
-            onClick={() => setTitle("Ululararası İşbirliği")}
-            to={url(t("InternationalCooperation"))}
+            onClick={() => setTitle(t("InternationalCooperation"))}
+            to={url("homepage.International.InternationalCooperation")}
           >
             {t("InternationalCooperation")}
           </NavLink>
