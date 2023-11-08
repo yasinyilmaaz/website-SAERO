@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap"
 import { useTranslation } from "react-i18next";
 
 
-export default function Announcements(){
+export default function Events(){
   const { t, i18n } = useTranslation();
 
     return(
@@ -10,7 +10,7 @@ export default function Announcements(){
       <Container className="">
         <div className="banner-content">
           <h1 style={{ width: "100%", fontSize: "100px", textAlign: "center" }}>
-            Duyurular Çok Yakında
+            Etkinlikler Çok Yakında
           </h1>
         </div>
       </Container>

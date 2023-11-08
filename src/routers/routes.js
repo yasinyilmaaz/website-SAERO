@@ -26,6 +26,11 @@ import OrganizationChart from "../Components/institutional/OrganizationChart";
 import InternationalLayout from "../Components/international/InternationalLayout";
 import InternationalCooperation from "../Components/international/InternationalCooperation";
 import NationalCooperation from "../Components/international/NationalCooperation";
+import Contact from "../Components/Other/Contact";
+import Announcements from "../Components/Other/Announcements";
+import Events from "../Components/Other/Events";
+import DonationandSponsorship from "../Components/Other/DonationandSponsorship";
+
 
 
 
@@ -142,6 +147,27 @@ const routes = [
                     }
                 ]
             },
+            {
+                path:"iletisim",
+                name:"contact",
+                element:<Contact/>,
+            },
+            {
+                path:"duyurular",
+                name:"announcements",
+                element:<Announcements/>,
+            },
+            {
+                path:"etkinlikler",
+                name:"Events",
+                element:<Events/>,
+            },
+            {
+                path:"sponsorluk",
+                name:"sponsorship",
+                element:<DonationandSponsorship/>,
+            }
+
         ]
     }
 ]

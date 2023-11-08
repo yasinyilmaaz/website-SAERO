@@ -162,18 +162,18 @@ export default function Navbar1() {
                 {t("InternationalActivities")}
               </NavLink>
               <hr />
-              <a href="#" className="duyurular ">
+              <NavLink to={url("homepage.announcements")} className="duyurular ">
                 {t("PressReleasesandAnnouncements")}
-              </a>
-              <a href="#" className="haberler ">
+              </NavLink>
+              <NavLink to={url("homepage.Events")} className="haberler ">
                 {t("Events")}
-              </a>
-              <a href="#" className="haberler ">
+              </NavLink>
+              <NavLink to={url("homepage.sponsorship")} className="haberler ">
                 {t("DonationandSponsorship")}
-              </a>
-              <a href="#" className="haberler ">
+              </NavLink>
+              <NavLink to={url("homepage.contact")} className="haberler ">
                 {t("Contact")}
-              </a>
+              </NavLink>
             </div>
             <div className="sociallinks ">
               <div className="flex gap-1  md:gap-3  flex-row">
