@@ -1,7 +1,9 @@
 import { Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footers() {
+  const { t, i18n } = useTranslation();
   return (
     <footer className="bg-black text-center text-gray-400 z-10 absolute w-full h-3/6 foother">
       <Container>
@@ -18,43 +20,43 @@ export default function Footers() {
           </div>
           <div className="flex footer-navbar justify-between flex-col md:flex-row">
             <div className="">
-              <h5>KURUMSAL</h5>
-              <NavLink>Kurumsal</NavLink>
-              <NavLink>Başkan</NavLink>
-              <NavLink>Yönetim Kurulu</NavLink>
-              <NavLink>Organizasyon Şeması</NavLink>
+              <h5>{t("Corporate")}</h5>
+              <NavLink>{t("Corporate")}</NavLink>
+              <NavLink>{t("President")}</NavLink>
+              <NavLink>{t("BoardofDirectors")}</NavLink>
+              <NavLink>{t("CorporateDocuments")}</NavLink>
+              <NavLink>{t("OrganizationSchema")}</NavLink>
             </div>
             <div>
-              <h5>PROJELER</h5>
-              <NavLink>Projeler</NavLink>
-              <NavLink>Yürütülen Projeler</NavLink>
-              <NavLink>Diğer Projeler</NavLink>
+              <h5>{t("Projects")}</h5>
+              <NavLink>{t("Projects")}</NavLink>
+              <NavLink>{t("OngoingProjects")}</NavLink>
+              <NavLink>{t("OtherProjects")}</NavLink>
             </div>
             <div>
-              <h5>EĞİTİM VE SOSYAL FARKINDALIK</h5>
-              <NavLink>Eğitim ve Sosyal Farkındalık</NavLink>
-              <NavLink>Sosyal Faliyetler</NavLink>
-              <NavLink>Sosyal Farkındalık</NavLink>
-              <NavLink>Çocuk</NavLink>
+              <h5>{t("EducationandSocialAwareness")}</h5>
+              <NavLink>{t("EducationandSocialAwareness")}</NavLink>
+              <NavLink>{t("EducationActivities")}</NavLink>
+              <NavLink>{t("AstronomicalEvents")}</NavLink>
+              <NavLink>{t("Blog")}</NavLink>
             </div>
             <div>
-              <h5>ULUSLARARASI FAALİYETLER</h5>
-              <NavLink>Uluslar Arası Faliyetler</NavLink>
-              <NavLink>Uluslararası Üyeler</NavLink>
-              <NavLink>Uluslararası İşbirliği</NavLink>
-              <NavLink>Çocuk</NavLink>
+              <h5>{t("InternationalActivities")}</h5>
+              <NavLink>{t("InternationalActivities")}</NavLink>
+              <NavLink>{t("NationalCooperation")}</NavLink>
+              <NavLink>{t("InternationalCooperation")}</NavLink>
+              <NavLink>{t("Blog")}</NavLink>
             </div>
             <div>
-              <h5>DİĞER</h5>
-              <NavLink>Etkinlik Takvimi</NavLink>
-              <NavLink>Haber Bülteni</NavLink>
-              <NavLink>İletişim</NavLink>
+              <h5>{t("Other")}</h5>
+              <NavLink>{t("PressReleasesandAnnouncements")}</NavLink>
+              <NavLink>{t("Events")}</NavLink>
+              <NavLink>{t("DonationandSponsorship")}</NavLink>
+              <NavLink>{t("Contact")}</NavLink>
             </div>
           </div>
           <hr className="mb-10 mt-10 border-t-2 border-t-white" />
-          <div className="text-left">
-            Saerotech ©2021 Her Hakkı Saklıdır
-          </div>
+          <div className="text-left">{t("Copyright")}</div>
         </div>
       </Container>
     </footer>

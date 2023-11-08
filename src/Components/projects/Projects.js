@@ -1,18 +1,17 @@
 import { Container } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+
 
 export default function Projects() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="banner-home">
       <Container className="">
         <div className="banner-content">
-          <h1>Yürütülen Projeler</h1>
+          <h1>{t("Projects")}</h1>
           <p>
-            Uydu, fırlatma araç ve sistemleri, hava araçları, simülatörler, uzay
-            platformları dâhil uzay ve havacılıkla ilgili her türlü ürün,
-            teknoloji, sistem, tesis, araç ve gereçlerin tasarımı, üretimi,
-            entegrasyonu ve gerekli testlerinin yapılmasını sağlamak amacıyla
-            plan, proje ve çalışmalar yapmak veya yaptırmakla görevli olan
-            kuruluştur.
+            {t("PHText")}
           </p>
         </div>
         <div className="flex flex-col gap-4">

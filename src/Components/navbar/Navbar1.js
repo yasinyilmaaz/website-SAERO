@@ -4,7 +4,7 @@ import { Sling as Hamburger } from "hamburger-react";
 import classNames from "classnames";
 import { NavLink } from "react-router-dom";
 import { url } from "../../routers/utils";
-
+import { useTranslation } from "react-i18next";
 
 export default function Navbar1() {
   const inputRef = useRef();
@@ -12,6 +12,14 @@ export default function Navbar1() {
   const [isOpen, setOpen] = useState(false);
   const [isHovered, setIsHovered] = useState("");
   const [hmenu, setHmenu] = useState();
+
+  const { t, i18n } = useTranslation();
+  
+
+  const handleLanguage = () => {
+    language == "TR" ? setLanguage("EN") : setLanguage("TR");
+    i18n.changeLanguage(i18n.language === "en" ? "tr" : "en");
+  };
 
   const handleInputClick = () => {
     inputRef.current.focus();
@@ -88,12 +96,7 @@ export default function Navbar1() {
                 </svg>
               </button>
             </div>
-            <div
-              className="font-bold cursor-pointer"
-              onClick={() =>
-                language == "TR" ? setLanguage("EN") : setLanguage("TR")
-              }
-            >
+            <div className="font-bold cursor-pointer" onClick={handleLanguage}>
               {language}
             </div>
             <a href="https://www.sakaryateknokent.com/">
@@ -114,8 +117,13 @@ export default function Navbar1() {
         <Container>
           <div className="hamburgers">
             <div className="hamburgerlink">
-              <NavLink onClick={() => setOpen(false)} href="#" className="Homepage" to={url("homepage")}>
-                Anasayfa
+              <NavLink
+                onClick={() => setOpen(false)}
+                href="#"
+                className="Homepage"
+                to={url("homepage")}
+              >
+                {t("homepage")}
               </NavLink>
               <NavLink
                 to={url("homepage.Corporate")}
@@ -124,7 +132,7 @@ export default function Navbar1() {
                 onMouseEnter={() => setIsHovered("Corporate")}
                 onMouseLeave={() => setIsHovered("")}
               >
-                Kurumsal
+                {t("Corporate")}
               </NavLink>
               <NavLink
                 to={url("homepage.projects")}
@@ -133,7 +141,7 @@ export default function Navbar1() {
                 onMouseEnter={() => setIsHovered("Projects")}
                 onMouseLeave={() => setIsHovered("")}
               >
-                Projeler
+                {t("Projects")}
               </NavLink>
               <NavLink
                 to={url("homepage.Education")}
@@ -142,7 +150,7 @@ export default function Navbar1() {
                 onMouseEnter={() => setIsHovered("Education")}
                 onMouseLeave={() => setIsHovered("")}
               >
-                Eğitim ve Sosyal Farkındalık
+                {t("EducationandSocialAwareness")}
               </NavLink>
               <NavLink
                 to={url("homepage.International")}
@@ -151,20 +159,20 @@ export default function Navbar1() {
                 onMouseEnter={() => setIsHovered("International")}
                 onMouseLeave={() => setIsHovered("")}
               >
-                UluslarArası Faliyetler
+                {t("InternationalActivities")}
               </NavLink>
               <hr />
               <a href="#" className="duyurular ">
-                Duyurular
+                {t("PressReleasesandAnnouncements")}
               </a>
               <a href="#" className="haberler ">
-                Haberler
+                {t("Events")}
               </a>
               <a href="#" className="haberler ">
-                Etkinlik Takvimi
+                {t("DonationandSponsorship")}
               </a>
               <a href="#" className="haberler ">
-                Bize Ulaşın
+                {t("Contact")}
               </a>
             </div>
             <div className="sociallinks ">
@@ -251,7 +259,7 @@ export default function Navbar1() {
 
           <div className="hamburgermenuinfo">
             <div>Saerotech</div>
-            <div>Telif Hakkı ©2021 Her Hakkı Saklıdır</div>
+            <div>{t("Copyright")}</div>
           </div>
         </Container>
       </nav>

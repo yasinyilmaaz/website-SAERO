@@ -1,9 +1,12 @@
 import Tabs from "./tabss/tabs";
+import { useTranslation } from "react-i18next";
+
 
 export default function Home() {
+  const { t, i18n } = useTranslation();
   return (
     <div>
-      <Tabs />
+      <Tabs t={t}/>
       <div className="sociallink-home">
         <div className="flex gap-1  md:gap-3  flex-row">
           <div className="flex">
