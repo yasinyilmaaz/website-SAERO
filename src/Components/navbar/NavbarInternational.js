@@ -16,14 +16,14 @@ export default function NavbarInternational() {
         <div className="flex gap-3 flex-col md:flex-row">
           <NavLink
             className={"no-underline text-[#7ae4a0]"}
-            onClick={() => setTitle("Ulusal ve Uluslararası Faliyetler")}
+            onClick={() => setTitle(t("InternationalActivities"))}
             to={url("homepage.International")}
           >
             {t("InternationalActivities")}
           </NavLink>
           <NavLink
             className={"no-underline text-[#7ae4a0]"}
-            onClick={() => setTitle("Ulusal İşbirliği")}
+            onClick={() => setTitle(t("NationalCooperation"))}
             to={url("homepage.International.InternationalCooperation")}
           >
             {t("NationalCooperation")}
@@ -31,7 +31,7 @@ export default function NavbarInternational() {
           <NavLink
             className={"no-underline text-[#7ae4a0]"}
             onClick={() => setTitle("Ululararası İşbirliği")}
-            to={url("homepage.International.NationalCooperation")}
+            to={url(t("InternationalCooperation"))}
           >
             {t("InternationalCooperation")}
           </NavLink>

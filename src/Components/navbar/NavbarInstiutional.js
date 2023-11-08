@@ -24,28 +24,28 @@ export default function NavbarInstiutional() {
           <NavLink
             className={"no-underline text-[#85dcee]"}
             to={url("homepage.Corporate.Minister")}
-            onClick={() => setTitle(i18n.language=="tr"?"Başkan":"President")}
+            onClick={() => setTitle(t("President"))}
           >
             {t("President")}
           </NavLink>
           <NavLink
             className={"no-underline text-[#85dcee]"}
             to={url("homepage.Corporate.BoardOfDirectors")}
-            onClick={() => setTitle("Yönetim Kurulu")}
+            onClick={() => setTitle(t("BoardofDirectors"))}
           >
             {t("BoardofDirectors")}
           </NavLink>
           <NavLink
             className={"no-underline text-[#85dcee]"}
             to={url("homepage.Corporate.CorporateDocuments")}
-            onClick={() => setTitle("Kurumsal Belgeler")}
+            onClick={() => setTitle(t("CorporateDocuments"))}
           >
             {t("CorporateDocuments")}
           </NavLink>
           <NavLink
             className={"no-underline text-[#85dcee]"}
             to={url("homepage.Corporate.OrganizationChart")}
-            onClick={() => setTitle("Orginizasyon Şeması")}
+            onClick={() => setTitle(t("OrganizationSchema"))}
           >
             {t("OrganizationSchema")}
           </NavLink>

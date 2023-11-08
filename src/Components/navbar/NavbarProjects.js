@@ -15,21 +15,21 @@ export default function NavbarProjects() {
         <div className="flex gap-3 flex-col md:flex-row">
           <NavLink
             className={"no-underline text-[#e9bb7e]"}
-            onClick={() => setTitle("Projeler")}
+            onClick={() => setTitle(t("Projects"))}
             to={url("homepage.projects")}
           >
             {t("Projects")}
           </NavLink>
           <NavLink
             className={"no-underline text-[#e9bb7e]"}
-            onClick={() => setTitle("Yürütülen Projeler")}
+            onClick={() => setTitle(t("OngoingProjects"))}
             to={url("homepage.projects.OnGoingProjects")}
           >
             {t("OngoingProjects")}
           </NavLink>
           <NavLink
             className={"no-underline text-[#e9bb7e]"}
-            onClick={() => setTitle("Diğer Projeler")}
+            onClick={() => setTitle(t("OtherProjects"))}
             to={url("homepage.projects.OtherProjects")}
           >
             {t("OtherProjects")}

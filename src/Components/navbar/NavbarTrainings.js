@@ -15,10 +15,10 @@ export default function NavbarTrainings(){
             <Container className="flex justify-between h-10 items-center">
                 <div  className="hidden md:block">{title}</div>
                 <div className="flex gap-3 flex-col md:flex-row">
-                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle("Eğitim ve Sosyal Farkındalık")} to={url("homepage.Education")}>{t("EducationandSocialAwareness")}</NavLink>
-                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle("Eğitim Faliyetleri")} to={url("homepage.Education.EducationalActivities")}>{t("EducationActivities")}</NavLink>
-                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle("Astronomik Olaylar")} to={url("homepage.Education.AstronomicalEvents")}>{t("AstronomicalEvents")}</NavLink>
-                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle("Blog")} to={url("homepage.Education.Blog")}>{t("Blog")}</NavLink>
+                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle(t("EducationandSocialAwareness"))}to={url("homepage.Education")}>{t("EducationandSocialAwareness")}</NavLink>
+                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle(t("EducationActivities"))} to={url("homepage.Education.EducationalActivities")}>{t("EducationActivities")}</NavLink>
+                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle(t("AstronomicalEvents"))} to={url("homepage.Education.AstronomicalEvents")}>{t("AstronomicalEvents")}</NavLink>
+                    <NavLink  className={"no-underline text-[#a595ff]"} onClick={() => setTitle(t("Blog"))} to={url("homepage.Education.Blog")}>{t("Blog")}</NavLink>
                 </div>
             </Container>
         </nav>
