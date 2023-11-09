@@ -2,6 +2,9 @@ import { Container } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import '../../homepage.css';
+import { url } from "../../routers/utils";
+import { NavLink } from "react-router-dom";
+
 
 
 export default function tabbs({t}) {
@@ -25,7 +28,7 @@ export default function tabbs({t}) {
           <div className="tabb">
             <Container className="mt-8  flex flex-col xl:flex-row mb-3">
               <div className="col-3 text-5xl">{t("Corporate")}</div>
-              <div className="col-9">{t("CText")}</div>
+              <div className="col-9">{t("CText")}  <NavLink to={url("homepage.Corporate")} className="page-transfer">...</NavLink></div>
             </Container>
           </div>
         </Tab>
@@ -33,7 +36,7 @@ export default function tabbs({t}) {
         <div className="tabb">
             <Container className="mt-8 flex  flex-col xl:flex-row mb-3">
             <div className="col-3 text-5xl">{t("Projects")}</div>
-              <div className="col-9">{t("Ptext")}</div>
+              <div className="col-9">{t("Ptext")}   <NavLink to={url("homepage.projects")} className="page-transfer">...</NavLink></div>
             </Container>
           </div>
         </Tab>
@@ -41,7 +44,7 @@ export default function tabbs({t}) {
         <div className="tabb">
             <Container className="mt-8 flex  flex-col xl:flex-row mb-3">
             <div className="col-3 text-5xl">{t("EducationandSocialAwareness")}</div>
-              <div className="col-9">{t("Etext")}</div>
+              <div className="col-9">{t("Etext")}   <NavLink to={url("homepage.Education")} className="page-transfer">...</NavLink></div>
             </Container>
           </div>
         </Tab>
@@ -49,7 +52,7 @@ export default function tabbs({t}) {
         <div className="tabb">
             <Container className="mt-8 flex  flex-col xl:flex-row mb-3">
             <div className="col-3 text-5xl">{t("InternationalActivities")}r</div>
-              <div className="col-9">{t("ITabText")}</div>
+              <div className="col-9">{t("ITabText")}   <NavLink to={url("homepage.International")} className="page-transfer">...</NavLink></div>
             </Container>
           </div>
         </Tab>

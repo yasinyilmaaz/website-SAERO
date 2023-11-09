@@ -46,5 +46,8 @@
     "Contact":"Contact",
     "VerySoon":"Very soon",
     "Copyright":"Copyright ©2021 All Rights Reserved",
-    "Other":"Other"
+    "Other":"Other",
+
+    "Login":"Login",
+    "Register":"Register"
 }

@@ -71,6 +71,8 @@ export default function Navbar1() {
             </a>
           </div>
           <div className="flex items-center gap-3  z-10">
+            <button className="text-gray-400 hover:text-white">{t("Login")}</button>
+            <button className="text-gray-400 hover:text-white">{t("Register")}</button>
             <div className=" flex gap-2">
               <input
                 ref={inputRef}

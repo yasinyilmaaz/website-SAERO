@@ -1,6 +1,8 @@
 import { Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { url } from "../../routers/utils";
+
 
 export default function Footers() {
   const { t, i18n } = useTranslation();
@@ -21,38 +23,37 @@ export default function Footers() {
           <div className="flex footer-navbar justify-between flex-col md:flex-row">
             <div className="">
               <h5>{t("Corporate")}</h5>
-              <NavLink>{t("Corporate")}</NavLink>
-              <NavLink>{t("President")}</NavLink>
-              <NavLink>{t("BoardofDirectors")}</NavLink>
-              <NavLink>{t("CorporateDocuments")}</NavLink>
-              <NavLink>{t("OrganizationSchema")}</NavLink>
+              <NavLink to={url("homepage.Corporate")}>{t("Corporate")}</NavLink>
+              <NavLink to={url("homepage.Corporate.Minister")}>{t("President")}</NavLink>
+              <NavLink to={url("homepage.Corporate.BoardOfDirectors")}>{t("BoardofDirectors")}</NavLink>
+              <NavLink to={url("homepage.Corporate.CorporateDocuments")}>{t("CorporateDocuments")}</NavLink>
+              <NavLink to={url("homepage.Corporate.OrganizationChart")}>{t("OrganizationSchema")}</NavLink>
             </div>
             <div>
               <h5>{t("Projects")}</h5>
-              <NavLink>{t("Projects")}</NavLink>
-              <NavLink>{t("OngoingProjects")}</NavLink>
-              <NavLink>{t("OtherProjects")}</NavLink>
+              <NavLink to={url("homepage.projects")}>{t("Projects")}</NavLink>
+              <NavLink to={url("homepage.projects.OnGoingProjects")}>{t("OngoingProjects")}</NavLink>
+              <NavLink to={url("homepage.projects.OtherProjects")}>{t("OtherProjects")}</NavLink>
             </div>
             <div>
               <h5>{t("EducationandSocialAwareness")}</h5>
-              <NavLink>{t("EducationandSocialAwareness")}</NavLink>
-              <NavLink>{t("EducationActivities")}</NavLink>
-              <NavLink>{t("AstronomicalEvents")}</NavLink>
-              <NavLink>{t("Blog")}</NavLink>
+              <NavLink to={url("homepage.projects")}>{t("EducationandSocialAwareness")}</NavLink>
+              <NavLink to={url("homepage.Education.EducationalActivities")}>{t("EducationActivities")}</NavLink>
+              <NavLink to={url("homepage.Education.AstronomicalEvents")}>{t("AstronomicalEvents")}</NavLink>
+              <NavLink to={url("homepage.Education.Blog")}>{t("Blog")}</NavLink>
             </div>
             <div>
               <h5>{t("InternationalActivities")}</h5>
-              <NavLink>{t("InternationalActivities")}</NavLink>
-              <NavLink>{t("NationalCooperation")}</NavLink>
-              <NavLink>{t("InternationalCooperation")}</NavLink>
-              <NavLink>{t("Blog")}</NavLink>
+              <NavLink to={url("homepage.International")}>{t("InternationalActivities")}</NavLink>
+              <NavLink to={url("homepage.International.NationalCooperation")}>{t("NationalCooperation")}</NavLink>
+              <NavLink to={url("homepage.International.InternationalCooperation")}>{t("InternationalCooperation")}</NavLink>
             </div>
             <div>
               <h5>{t("Other")}</h5>
-              <NavLink>{t("PressReleasesandAnnouncements")}</NavLink>
-              <NavLink>{t("Events")}</NavLink>
-              <NavLink>{t("DonationandSponsorship")}</NavLink>
-              <NavLink>{t("Contact")}</NavLink>
+              <NavLink to={url("homepage.announcements")}>{t("PressReleasesandAnnouncements")}</NavLink>
+              <NavLink to={url("homepage.Events")}>{t("Events")}</NavLink>
+              <NavLink to={url("homepage.sponsorship")}>{t("DonationandSponsorship")}</NavLink>
+              <NavLink to={url("homepage.contact")}>{t("Contact")}</NavLink>
             </div>
           </div>
           <hr className="mb-10 mt-10 border-t-2 border-t-white" />
