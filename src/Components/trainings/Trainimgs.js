@@ -16,9 +16,9 @@ export default function Trainimgs(){
                 </div>
                 <div className="flex flex-col gap-4">
                 <div className="text-white">
-                    <div className="w-full flex justify-between flex-col md:flex-row">
-                        <div className="h-1 font-bold text-lg">{t("EducationandSocialAwareness")}</div>
-                        <div style={{"maxWidth":"75%"}}>{t("ESHText2")}</div>
+                    <div className="w-full flex justify-between flex-col md:flex-row text-center md:text-left">
+                        <div className="h-1 font-bold text-lg mb-4">{t("EducationandSocialAwareness")}</div>
+                        <div className="md:w-3/4">{t("ESHText2")}</div>
                     </div>
                 </div>
                 <hr className="h-1 border-t-2 border-t-white"/>

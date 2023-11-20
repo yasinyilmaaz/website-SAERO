@@ -4,6 +4,7 @@ import Tabs from "react-bootstrap/Tabs";
 import '../../homepage.css';
 import { url } from "../../routers/utils";
 import { NavLink } from "react-router-dom";
+import './tab.css'
 
 
 

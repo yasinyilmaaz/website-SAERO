@@ -54,7 +54,8 @@ export default function Home() {
             </a>
           </div>
           <div className="flex">
-            <a href="" className="sociallink">
+            {/* instagram */}
+            <a href="https://www.instagram.com/_saerotech/" className="sociallink">
               {" "}
               <svg
                 aria-hidden="true"

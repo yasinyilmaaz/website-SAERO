@@ -3,42 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Navbar tasarımı */
 
-.nav-line{
-    height: 2px;
-    width: 100%;
-    background-color: gray;
-    margin-bottom: 5px;
-}
-
-.nav-link:hover .nav-line{
-    background-color: var(--color);
-    transition: all 1s;
-}
-
-.nav-link:hover .nav-text{
-    color: var(--color) ;
-    transition: all 1s;
-}
-
-.hamburger div{
-    height: 2px;
-    width: 30px;
-    background-color: gray;
-    margin-bottom: 5px;
-    margin-right: 10px;
-}
-
-.hamburger:hover{
-    cursor: pointer;
-}
-
-.hamburger:hover div{
-    background-color: antiquewhite;
-    
-}
-/* ************************** */
 
 .star{
     background-image: url('star.png');

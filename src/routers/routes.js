@@ -1,19 +1,20 @@
 import Home from "../Components/Home";
 import HomePage from "../Components/HomePage";
 
+// Proje
 import Projects from "../Components/projects/Projects";
 import ProjectsLayout from "../Components/projects/ProjectsLayout";
 import OnGoingProjects from "../Components/projects/OnGoingProjects";
 import OtherProjects from "../Components/projects/OtherProjects";
 
+// Eğitim
 import Trainimgs from "../Components/trainings/Trainimgs";
 import TrainimgsLayout from "../Components/trainings/TrainimgsLayout";
 import Blog from "../Components/trainings/Blog";
 import AstronomicalEvents from "../Components/trainings/AstronomicalEvents";
 import EducationalActivities from "../Components/trainings/EducationalActivities";
 
-
-import International from "../Components/international/International";
+// kurumsal
 import Minister from "../Components/institutional/Minister";
 import InstitutionalLayout from "../Components/institutional/InstitutionalLayout";
 import Institutional from "../Components/institutional/Institutional";
@@ -22,7 +23,8 @@ import CorporateDocuments from "../Components/institutional/CorporateDocuments";
 import OrganizationChart from "../Components/institutional/OrganizationChart";
 
 
-
+// Uluslararası
+import International from "../Components/international/International";
 import InternationalLayout from "../Components/international/InternationalLayout";
 import InternationalCooperation from "../Components/international/InternationalCooperation";
 import NationalCooperation from "../Components/international/NationalCooperation";
@@ -32,8 +34,8 @@ import Events from "../Components/Other/Events";
 import DonationandSponsorship from "../Components/Other/DonationandSponsorship";
 
 
-
-
+// Auth
+import Login from '../Components/Auth/Login'
 
 
 const routes = [  
@@ -46,6 +48,7 @@ const routes = [
                 index:true,
                 element:<Home/>
             },
+            // PROJELER
             {
                 path:"projeler",
                 name:"projects",
@@ -67,6 +70,7 @@ const routes = [
                     }
                 ]
             },
+            // Eğitimler
             {
                 path:"egitim",
                 name:"Education",
@@ -95,6 +99,7 @@ const routes = [
 
                 ]
             },
+            // Kurumsal
             {
                 path:"kurumsal",
                 name:"Corporate",
@@ -126,6 +131,7 @@ const routes = [
                     },
                 ]
             },
+            // Uluslararası
             {
                 path:"uluslararası",
                 name:"International",
@@ -147,25 +153,41 @@ const routes = [
                     }
                 ]
             },
+            // İletişim
             {
                 path:"iletisim",
                 name:"contact",
                 element:<Contact/>,
             },
+            // Duyurular
             {
                 path:"duyurular",
                 name:"announcements",
                 element:<Announcements/>,
             },
+            // Etkinlikler
             {
                 path:"etkinlikler",
                 name:"Events",
                 element:<Events/>,
             },
+            // Sponsorluk
             {
                 path:"sponsorluk",
                 name:"sponsorship",
                 element:<DonationandSponsorship/>,
+            },
+            // Auth
+            {
+                path:"Auth",
+                name:"Auth",
+                children:[
+                    {
+                        path:"Login",
+                        name:"Login",
+                        element:<Login/>,
+                    },
+                ]
             }
 
         ]

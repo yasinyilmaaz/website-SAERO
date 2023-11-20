@@ -1,0 +1,175 @@
+.navbar{
+    /* border-bottom: 1px solid rgb(133, 220, 238); */
+    color: white;
+}
+
+/* Yandn açılan menünün kodları */
+
+/* En dış katman */
+.hambugermenu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: rgb(197, 197, 197);
+    background-color: rgba(14, 14, 14, 0.856);
+    z-index: 1000;
+    opacity: 1;
+    transition: none;
+    animation: antdDrawerFadeIn 0.5s cubic-bezier(0.7, 0.3, 0.1, 1);
+    pointer-events: auto;
+}
+
+@keyframes antdDrawerFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.hamburgers{
+    position: static;
+    height: 50%;
+    width: 20%;
+    border-right: 1px white solid;
+}
+
+
+.hamburgerlink{
+    width: 350px;
+    height: 50%;
+    position: absolute;
+    overflow: scroll;
+    margin-right: -17px;
+    margin-bottom: -17px;
+    border-right: 1px white solid;
+}
+
+/* scrool bar tasarımı (gizledim) */
+.hamburgerlink::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+/* Linklerin genel tasarımı */
+.hamburgerlink a{
+    color: #c5c5c5;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    display: block;
+}
+/* Linklerin üstüne gelince */
+.hamburgerlink a:hover{
+    color: white;
+}
+
+/* Kurumsal üstüne gelince */
+.Corporate:hover{
+    color: #85dcee !important;
+}
+
+/* Projeler linkinin üstüne gelince */
+.Projects:hover{
+    color: #e9bb7e !important;
+}
+
+/* eğitimler linkinin üstüne gelince */
+.Education:hover{
+    color: #a595ff !important;
+}
+
+/* uulusal ve uluslararası linkinin üstüne gelince */
+.International:hover{
+    color: #7ae4a0 !important;
+}
+
+/* Sosyal medya linkleri */
+.sociallinks{
+    position: absolute;
+    top: 50%;
+    padding-top: 3rem;
+    width: 350px;
+    border-right: 1px white solid;
+}
+
+.sociallink svg{
+    color: #7a7a7a;  
+    border: #7a7a7a 0.5px solid;
+    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center; 
+}
+
+.sociallink svg:hover{
+    color: white;
+   
+}
+
+/* Telif Hakkı bölümü */
+.hamburgermenuinfo{
+    position: absolute;
+    top: 60%;
+    width: 350px;
+    margin-top: 40px;
+    bottom: 0;
+    border-right: 1px white solid;
+    color: #7a7a7a;
+}
+
+/*  linklerin üstüne geldiğinde sağ tarafta çıkan yazılar */
+.hamburgertext{
+    color: white;
+    position: absolute;
+    width: 600px;
+    left: 40%;
+    padding-top: 10px;
+}
+
+/* Navbar tasarımı */
+
+.nav-line{
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 5px;
+}
+
+.nav-link:hover .nav-line{
+    background-color: var(--color);
+    transition: all 1s;
+}
+
+.nav-link:hover .nav-text{
+    color: var(--color) ;
+    transition: all 1s;
+}
+
+.hamburger div{
+    height: 2px;
+    width: 30px;
+    background-color: gray;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+.hamburger:hover div{
+    background-color: antiquewhite;
+    
+}
+/* ************************** */
+
+
+
+/* *************** */

@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { url } from "../../routers/utils";
+import './footer.css'
 
 
 export default function Footers() {

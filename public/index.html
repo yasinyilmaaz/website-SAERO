@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>SaeroTech</title>
     <style>
       .star {
       width: 2px;
@@ -55,39 +55,23 @@
     -->
 
     <script>
-      const numberOfStars = 150;
-      const numberOfMeteors = 12;
+      // const numberOfStars = 150;
   
-      const createStar = () => {
-        const star = document.createElement("div");
-        star.className = "star";
-        star.style.left = `${Math.random() * 100}vw`;
-        star.style.top = `${Math.random() * 90}vh`;
-        document.body.appendChild(star);
-      };
+      // const createStar = () => {
+      //   const star = document.createElement("div");
+      //   star.className = "star";
+      //   star.style.left = `${Math.random() * 100}vw`;
+      //   star.style.top = `${Math.random() * 90}vh`;
+      //   document.body.appendChild(star);
+      // };
   
-      const createMeteor = () => {
-        const meteor = document.createElement("div");
-        meteor.className = "meteor";
-        meteor.style.left = `${Math.random() * 80}vw`;
-        meteor.style.top = `${Math.random() * 50}vh`;
-        meteor.style.marginTop= "400px"
-        document.body.appendChild(meteor);
-      };
+      // const animateStars = () => {
+      //   for (let i = 0; i < numberOfStars; i++) {
+      //     createStar();
+      //   }
+      // };
   
-      const animateStars = () => {
-        for (let i = 0; i < numberOfStars; i++) {
-          createStar();
-        }
-      };
-  
-      const animateMeteors = () => {
-        for (let i = 0; i < numberOfMeteors; i++) {
-          createMeteor();
-        }
-      };
-  
-      animateStars();
+      // animateStars();
       // animateMeteors();
     </script>
   </body>

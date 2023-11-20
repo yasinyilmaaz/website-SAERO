@@ -1,0 +1,29 @@
+/* Foother tasarımı */
+
+.foother{
+    height: 600px;
+}
+
+.footer-navbar div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    gap: 8px;
+}
+    
+  .footer-navbar h5{
+    color: white;
+  }
+  
+  .footer-navbar a{
+    color: #a1a1a1;
+    text-decoration: none;
+  }
+  
+  .footer-navbar a:hover{
+    color: #1890ff;
+    text-decoration: none;
+  }
+
+/* ************************** */
