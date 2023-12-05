@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { url } from "../../routers/utils";
 import { useTranslation } from "react-i18next";
 import './navbar.css'
+import logo from "../../koyuuzerine.png" 
 
 export default function Navbar1() {
   const inputRef = useRef();
@@ -64,7 +65,7 @@ export default function Navbar1() {
             <NavLink  to={url("homepage")}  href="#" className="h-8">
               <figure>
                 <img
-                  src="https://tua.gov.tr/images/tua-logo-tr.svg"
+                  src={logo}
                   alt="Saerotech"
                   className="h-8"
                 />
